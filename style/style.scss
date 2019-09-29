@@ -1,0 +1,587 @@
+@import "../style/bootstrap/scss/bootstrap.scss";
+@import url('https://fonts.googleapis.com/css?family=Cinzel&display=swap');
+@import "../style/materialize-src/sass/components/materialbox";
+
+* {
+    //merapikan div box sizing
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+
+
+    padding: 0;
+    margin: 0;
+    font-family: 'Cinzel', serif;
+    -webkit-tap-highlight-color: transparent;
+
+}
+
+.main {
+    overflow-x: hidden;
+    overflow-y: hidden;
+    background: black;
+    width: 100%;
+    padding-right: 0px;
+    padding-left: 0px;
+    margin-right: auto;
+    margin-left: auto;
+
+}
+
+.full {
+    width: 100%;
+    padding-right: 0px;
+    padding-left: 0px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+}
+
+h2.title {
+    color: white;
+    font-size: 3.5em;
+    font-weight: bold;
+}
+
+/*Header*/
+//Header Navbar
+.mynav {
+    .container-fluid {
+
+        padding-right: 0;
+        padding-left: 0;
+    }
+}
+
+.navbar {
+
+    padding: 1vw 0;
+}
+
+
+//Desktop Logo
+@media (min-width: 768px) {
+    .navbar-brand img {
+        display: block;
+        max-width: 180px;
+        width: 14vw;
+
+        top: 20px;
+    }
+
+    .logo {
+        display: block;
+        max-width: 180px;
+        width: 14vw;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        top: 20px;
+    }
+
+
+    img.secondary-web {
+        top: 81.11px;
+    }
+
+    img.secondary-mobile {
+        display: none;
+    }
+}
+
+@media (max-width: 767px) {
+    .navbar-brand img {
+        display: inline-block;
+        height: 9vw;
+        max-width: 30vw;
+
+    }
+
+    img.secondary-web {
+        display: none;
+    }
+
+    img.secondary-mobile {
+        position: relative;
+    }
+}
+
+
+
+.nav-link {
+    margin-top: 15px;
+    margin-left: 1vw;
+    margin-right: 1vw;
+    font-size: 1.5em;
+    color: white;
+    text-align: center;
+}
+
+
+@media (max-width: 922px) {
+    .nav-link {
+        margin-top: 15px;
+        margin-left: 0.5vw;
+        margin-right: 0.5vw;
+        font-size: 1em;
+        color: white;
+        text-align: center;
+    }
+}
+
+@media (min-width: 768px) {
+    .navbar-nav li:nth-child(3) {
+        .nav-link {
+            margin-right: 8vw;
+        }
+    }
+
+    .navbar-nav li:nth-child(4) {
+        .nav-link {
+            margin-left: 8vw;
+        }
+    }
+}
+
+@media (max-width: 767px) {
+    .navbar-collapse {
+        height: 100vh;
+        transition: 0.1s;
+    }
+
+}
+
+
+//Header Above The Fold
+header {
+
+
+    min-height: 50vh;
+}
+
+i.fa-align-right {
+    font-size: 1.5em;
+}
+
+//Slider
+//Slider
+$extendsize : 3.5;
+$img-w: $extendsize*196.8vmax;
+$img-h: $extendsize*25vmax;
+$shrink: 2;
+$ratio: 1 / $shrink;
+$speed: 150s;
+
+.slider {
+    position: relative;
+    width: 100%;
+    padding: 4vh 0;
+    overflow: hidden;
+
+    .slider-row {
+        width: 100%;
+        height: $img-h * $ratio;
+        background-image: url(/asset/slider.png);
+        background-size: $img-w * $ratio $img-h * $ratio;
+        animation: slide $speed linear infinite;
+    }
+}
+
+@keyframes slide {
+    from {
+        background-position-x: 0;
+    }
+
+    to {
+        background-position-x: -$img-w * $ratio;
+    }
+}
+
+/*ABOUT*/
+
+.about .container-fluid {
+
+    padding-right: 0;
+    padding-left: 0;
+
+}
+
+.shop-img {
+    min-height: 65vh;
+    max-width: 100%;
+    max-height: 100%;
+    background-image: url(/asset/pauline-loroy-tv8PIPPY3rQ-unsplash.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+
+}
+
+.shop-about {
+    display: flex;
+    margin: auto;
+    color: white;
+}
+
+.about h1 {
+    text-align: left;
+    padding: 30px;
+    font-size: 3em;
+}
+
+.about p {
+
+    padding: 20px;
+    font-size: 1.5em;
+}
+
+/*Parallax*/
+.parallax {
+    /* The image used */
+    background-image: url(/asset/pauline-loroy-tv8PIPPY3rQ-unsplash.jpg);
+
+    /* Set a specific height */
+    min-height: 250px;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/*service*/
+
+
+.service .card {
+    margin: 2.5vh auto;
+    padding: 0;
+    color: white;
+    background-color: rgb(71, 13, 13);
+}
+
+.service .card-img-top {
+    width: 100%;
+    height: 40vh;
+    object-fit: cover;
+    object-position: top center;
+
+}
+
+.service .card-title {
+    text-align: center;
+    font-size: 2em;
+    font-weight: bold;
+}
+
+.service .isi-paket {
+
+    font-size: 1.2em;
+    font-weight: 500;
+}
+
+.service .price {
+    text-align: right;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+
+/*crew*/
+.crew h2.title {
+    color: white;
+    font-size: 3.5em;
+}
+
+.crew .card {
+    margin: 2.5vh 1vw;
+    padding: 0;
+    width: 400px;
+    background-color: rgb(54, 54, 51);
+    color: white;
+}
+
+.crew .card-body h3 {
+    font-size: 2rem;
+    text-align: center;
+}
+
+.crew .card-body p {
+    font-size: 1rem;
+}
+
+.crew .card-img-top img {
+    margin: 10px 0;
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    object-position: top center;
+}
+
+.crew .slicker .slick-prev,
+.crew .slicker .slick-prev {
+    left: -25px;
+
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    display: block;
+    font-size: 3em;
+    padding: 0;
+    margin: 0;
+
+    cursor: pointer;
+    color: white;
+    background-color: transparent;
+    border-color: transparent;
+}
+
+.crew .slicker .slick-next {
+    right: -25px;
+
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    display: block;
+    font-size: 3em;
+    padding: 0;
+    margin: 0;
+
+    cursor: pointer;
+    color: white;
+    background-color: transparent;
+    border-color: transparent;
+}
+
+.crew .slicker .slick-prev {
+    left: -25px;
+
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    display: block;
+    font-size: 3em;
+    padding: 0;
+    margin: 0;
+
+    cursor: pointer;
+    color: white;
+    background-color: transparent;
+    border-color: transparent;
+}
+
+/*Gallery*/
+
+.gallery .form-group {
+    width: 100%;
+
+}
+
+.gallery .form-control {
+    width: 80%;
+    border: 0px;
+    border-radius: 0px;
+    margin: 1rem auto;
+}
+
+.image-gallery {
+    width: 1000px;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+}
+
+.imagecontainer {
+    object-fit: cover;
+    border-radius: 2px;
+    box-sizing: border-box;
+    display: inline-block;
+    height: 300px;
+    margin: 15px 15px;
+    position: relative;
+    width: 300px;
+    align-content: center;
+
+}
+
+@media (max-width: 1200px) {
+    .image-gallery {
+        width: 680px;
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0 auto;
+    }
+
+    .imagecontainer {
+        object-fit: cover;
+        border-radius: 2px;
+        box-sizing: border-box;
+        display: inline-block;
+        height: 150px;
+        margin: 10px 10px;
+        position: relative;
+        width: 150px;
+        align-content: center;
+
+    }
+}
+
+@media (max-width: 767px) {
+    .image-gallery {
+        width: 680px;
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0 auto;
+    }
+
+    .imagecontainer {
+        object-fit: cover;
+        border-radius: 2px;
+        box-sizing: border-box;
+        display: inline-block;
+        height: 100px;
+        margin: 5px 5px;
+        position: relative;
+        width: 100px;
+        align-content: center;
+
+    }
+}
+
+@media (max-width: 425px) {
+    .image-gallery {
+        width: 424px;
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0 auto;
+    }
+
+    .imagecontainer {
+        object-fit: cover;
+        border-radius: 2px;
+        box-sizing: border-box;
+        display: inline-block;
+        height: 95px;
+        margin: 5px 5px;
+        position: relative;
+        width: 95px;
+        align-content: center;
+
+    }
+}
+
+@media (max-width: 375px) {
+    .image-gallery {
+        width: 375px;
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0 auto;
+    }
+
+    .imagecontainer {
+        object-fit: cover;
+        border-radius: 2px;
+        box-sizing: border-box;
+        display: inline-block;
+        height: 50px;
+        margin: 5px 5px;
+        position: relative;
+        width: 50px;
+        align-content: center;
+
+    }
+}
+
+@media (max-width: 320px) {
+    .image-gallery {
+        width: 300px;
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0 auto;
+    }
+
+    .imagecontainer {
+        object-fit: cover;
+        border-radius: 2px;
+        box-sizing: border-box;
+        display: inline-block;
+        height: 50px;
+        margin: 5px 5px;
+        position: relative;
+        width: 50px;
+        align-content: center;
+
+    }
+}
+
+/*footer*/
+footer {
+    background-color: #212529;
+    color: white;
+
+}
+
+.footer-logo {
+    width: 8vmax;
+}
+
+hr.light {
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
+    width: 75%;
+    margin: 1rem auto;
+    text-align: center;
+}
+
+hr.light-full {
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
+    width: 100%;
+    margin-top: .8rem;
+    margin-bottom: 1rem;
+    margin: 1rem auto;
+}
+
+footer h5 {
+    font-weight: bold;
+}
+
+/* BUTTON WA*/
+.fixed-button-wa {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    margin-right: 30px;
+    margin-bottom: 30px;
+    width: 80px;
+    height: 80px;
+    background-color: green;
+    border-radius: 50%;
+    display: flex;
+    cursor: pointer;
+
+    .fa-whatsapp {
+        margin: auto;
+        font-size: 3em;
+        color: white
+    }
+
+}
+
+// MEDIA QUERIES
+
+
+
+
+// MEDIA QUERIES
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) {}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) {}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) {}
+
+@media (min-width: 1200px) {}
