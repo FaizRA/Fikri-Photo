@@ -13,6 +13,7 @@
     margin: 0;
     font-family: 'Cinzel', serif;
     -webkit-tap-highlight-color: transparent;
+    transition: 0.30s;
 
 }
 
@@ -598,6 +599,17 @@ footer h5 {
         }
 
     }
+}
+
+.sticky-top {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+.transparent-background {
+    background-color: rgba(0, 0, 0, 0.75) !important;
 }
 
 // MEDIA QUERIES
