@@ -11160,4 +11160,28 @@ footer h5 {
   font-size: 3em;
   color: white;
 }
+
+@media (max-width: 768px) {
+  /* BUTTON WA*/
+  .fixed-button-wa {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    margin-right: 15px;
+    margin-bottom: 15px;
+    width: 60px;
+    height: 60px;
+    background-color: green;
+    border-radius: 50%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    cursor: pointer;
+  }
+  .fixed-button-wa .fa-whatsapp {
+    margin: auto;
+    font-size: 2em;
+    color: white;
+  }
+}
 /*# sourceMappingURL=style.css.map */
