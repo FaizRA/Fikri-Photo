@@ -182,7 +182,7 @@ $speed: 150s;
     .slider-row {
         width: 100%;
         height: $img-h * $ratio;
-        background-image: url(/asset/slider.png);
+        background-image: url('../asset/slider.png');
         background-size: $img-w * $ratio $img-h * $ratio;
         animation: slide $speed linear infinite;
     }
@@ -211,7 +211,7 @@ $speed: 150s;
     min-height: 65vh;
     max-width: 100%;
     max-height: 100%;
-    background-image: url(/asset/pauline-loroy-tv8PIPPY3rQ-unsplash.jpg);
+    background-image: url('../asset/pauline-loroy-tv8PIPPY3rQ-unsplash.jpg');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -240,7 +240,7 @@ $speed: 150s;
 /*Parallax*/
 .parallax {
     /* The image used */
-    background-image: url(/asset/pauline-loroy-tv8PIPPY3rQ-unsplash.jpg);
+    background-image: url('../asset/pauline-loroy-tv8PIPPY3rQ-unsplash.jpg');
 
     /* Set a specific height */
     min-height: 250px;
