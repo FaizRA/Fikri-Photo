@@ -10820,6 +10820,12 @@ i.fa-align-right {
   background-size: cover;
 }
 
+@media (max-width: 768px) {
+  .parallax {
+    display: none;
+  }
+}
+
 /*service*/
 .service .card {
   margin: 2.5vh auto;

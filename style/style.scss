@@ -252,6 +252,12 @@ $speed: 150s;
     background-size: cover;
 }
 
+@media (max-width: 768px) {
+    .parallax {
+        display: none;
+    }
+}
+
 /*service*/
 
 
