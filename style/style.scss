@@ -224,6 +224,7 @@ $speed: 150s;
     display: flex;
     margin: auto;
     color: white;
+    background-color: #363633;
 }
 
 .about h1 {
@@ -236,6 +237,20 @@ $speed: 150s;
 
     padding: 20px;
     font-size: 1.5em;
+}
+
+@media (max-width: 576px) {
+    .about h1 {
+        text-align: left;
+        padding: 30px;
+        font-size: 2em;
+    }
+
+    .about p {
+
+        padding: 20px;
+        font-size: 1em;
+    }
 }
 
 /*Parallax*/
@@ -610,6 +625,7 @@ footer h5 {
 
 .transparent-background {
     background-color: rgba(0, 0, 0, 0.75) !important;
+    z-index: 99999;
 }
 
 // MEDIA QUERIES
