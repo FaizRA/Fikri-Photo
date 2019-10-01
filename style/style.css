@@ -10653,6 +10653,7 @@ h2.title {
 
 .navbar {
   padding: 1vw 0;
+  z-index: 99999;
 }
 
 @media (min-width: 768px) {
